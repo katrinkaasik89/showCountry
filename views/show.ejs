@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Country info</title>
+</head>
+<body>
+   
+    <h1>Show country info</h1>
+<form action="/cinfo" method="POST">
+    
+    Choose your country:
+    <select name="country" id="">
+        <option value="estonia">Estonia</option>
+        <option value="latvia">Latvia</option>
+        <option value="lithuania">Lithuania</option>
+    </select>
+    
+    <button type="submit">Show information</button>>
+</form>
+    
+<p> Name <%=cInformation.cName %>: <br>
+    Top Level Domain <%=cInformation.cDomain %>: <br>
+    Calling Code <%=cInformation.cCode %>: <br>
+    Capital <%=cInformation.cCapital %>: <br>
+    Region <%=cInformation.cRegion %>: <br>
+    Subregion <%=cInformation.cSRegion %>: <br>
+    Population <%=cInformation.cPopulation %>: <br>
+    Timezone <%=cInformation.cTimezone %>: <br>
+    Language in a full word in English <%=cInformation.cLanguage %>: <br>
+    Currency code, name and symbol <%=cInformation.cCurrency %>: <br>
+    A url to the flag image <%=cInformation.cFlag %>: <br>
+     </p>
+
+</body>
+</html>
